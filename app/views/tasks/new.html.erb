@@ -1,7 +1,5 @@
-<%= form_with model: @task do |t| %>
-  <%= t.label :title %>
-  <%= t.text_field :title %>
-  <%= t.label :details %>
-  <%= t.text_field :details %>
-  <%= t.submit %>
-<% end %>
+<div class="container text-center">
+  <h1 class="m-3">New task</h1>
+
+  <%= render "form", action: params[:action], task: @task %>
+</div>

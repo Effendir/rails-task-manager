@@ -1,16 +1,8 @@
 <div class="container text-center">
   <div class="d-flex flex-column">
-    <div><h1 class="">Edit task</h1></div>
+    <div><h1 class="m-3">Edit task</h1></div>
 
-    <%= form_with model: @task do |t| %>
-      <%= t.label :title %>
-      <%= t.text_field :title %>
-      <%= t.label :details %>
-      <%= t.text_field :details %>
-      <%= t.label :completed %>
-      <%= t.check_box :completed %>
-      <%= t.submit %>
-    <% end %>
+    <%= render "form", task: @task %>
 
   </div>
 </div>
